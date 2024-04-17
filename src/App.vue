@@ -1,11 +1,12 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <WBITool />
     </v-main>
   </v-app>
 </template>
 
 <script setup>
   //
+import WBITool from "@/components/WBITool.vue";
 </script>
