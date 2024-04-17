@@ -61,22 +61,11 @@ const submit = (wbiValue, wbiVersion, wbiType) => {
         </v-col>
       </v-row>
       <v-row>
-        <v-col>
-          <v-btn class="mt-2" type="submit" block variant="plain">Download</v-btn>
+        <v-col cols="3">
+          <v-btn class="mt-2" type="submit" block variant="text" color="primary">Download</v-btn>
         </v-col>
       </v-row>
     </v-form>
-
-    <v-row v-if="downloaded.length >= 1">
-      <v-col>
-        <h6>Historie:</h6>
-        <v-list>
-          <v-list-item v-for="wbi in downloaded" :href="wbi.url" target="_blank" density="compact">
-            {{ wbi.wbiValue }}{{ wbi.wbiVersion }}
-          </v-list-item>
-        </v-list>
-      </v-col>
-    </v-row>
   </v-container>
 </template>
 
