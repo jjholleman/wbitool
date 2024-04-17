@@ -14,7 +14,7 @@ const formatWbiValue = () => {
 const submit = (wbiValue, wbiVersion, wbiType) => {
   const realWbiValue = formatWbiValue(wbiValue.value)
   const url = `https://btd-planner.prorail.nl?taak=WBI-${realWbiValue}-${wbiVersion}&doc=${wbiType}`
-  console.log(url)
+  console.log(url) 
   window.open(url, '_blank')
 }
 </script>
